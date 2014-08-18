@@ -20,7 +20,7 @@
   (def cuenta start)
   (print cuenta)
   (= cuenta start)
-  (while (< cuenta end) (do(def cuenta (+ cuenta 1)) (print " ") ( print cuenta )()))
+  (while (< cuenta end) (do(def cuenta (+ cuenta 1)) (print " ") ( print cuenta )))
   )
 
 (defn compress-sequence
