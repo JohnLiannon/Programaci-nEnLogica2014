@@ -4,7 +4,9 @@
   "Escribir una funcion que retorne solamente los numeros impares de
    una secuencia"
   [s]
-  )
+  (for [i s] (if (not=(mod i 2)0)i))
+   
+ )
 
 (defn nil-key
   "Escribir una funcion que dada una clave y un mapa, devuelva true, solamente si el mapa
@@ -15,6 +17,10 @@
   "Escribir una funcion que cree una lista de enteros en un rango dado.
    Restricciones: range"
   [start end]
+  (def cuenta start)
+  (print cuenta)
+  (= cuenta start)
+  (while (< cuenta end) (do(def cuenta (+ cuenta 1)) (print " ") ( print cuenta )()))
   )
 
 (defn compress-sequence
