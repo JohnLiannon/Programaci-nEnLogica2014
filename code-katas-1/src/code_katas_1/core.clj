@@ -17,6 +17,7 @@
   "Escribir una funcion que cree una lista de enteros en un rango dado.
    Restricciones: range"
   [start end]
+  
   (take-while (partial > end) (iterate inc start))
   )
 
@@ -48,6 +49,7 @@
    luego el segundo de cada una, luego el tercero, etc.
    Restricciones: interleave"
   [s1 s2]
+(mapcat vector s1 s2)
   )
 
 (defn retrieve-caps
