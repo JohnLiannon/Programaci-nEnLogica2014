@@ -17,6 +17,7 @@
   "Escribir una funcion que cree una lista de enteros en un rango dado.
    Restricciones: range"
   [start end]
+  (take-while (partial > end) (iterate inc start))
   )
 
 (defn compress-sequence
@@ -39,7 +40,7 @@
   "Escribir una funcion que parta una secuencia en dos partes
    Restricciones: split-at"
   [length s]
-  
+ 
   )
 
 (defn inter-two
@@ -61,6 +62,7 @@
    solamente si alguno de los parametros son true, pero no todos son true. En otro
    caso debera retornar false"
   [& xs]
+  (if(distinct xs) true false)
   )
 
 (defn zip-map
