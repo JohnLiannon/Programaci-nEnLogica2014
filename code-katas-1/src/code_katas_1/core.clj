@@ -17,10 +17,6 @@
   "Escribir una funcion que cree una lista de enteros en un rango dado.
    Restricciones: range"
   [start end]
-  (def cuenta start)
-  (print cuenta)
-  (= cuenta start)
-  (while (< cuenta end) (do(def cuenta (+ cuenta 1)) (print " ") ( print cuenta )))
   )
 
 (defn compress-sequence
@@ -35,6 +31,7 @@
    y retorne el que tenga el valor mayor
    Restricciones: max y max-key"
   [& args]
+  (last(sort args))
   
   )
 
