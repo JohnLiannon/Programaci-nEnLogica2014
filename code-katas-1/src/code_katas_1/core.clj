@@ -4,7 +4,7 @@
   "Escribir una funcion que retorne solamente los numeros impares de
    una secuencia"
   [s]
-  (for [i s] (if (not=(mod i 2)0)i))
+  (filter odd? s)
    
  )
 
@@ -27,18 +27,22 @@
   "Escribir una funcion que elimine los duplicados consecutivos
    de una secuencia"
   [s]
+  (distinct s)
   )
 
 (defn max-value
   "Escribir una funcion que reciba un numero variable de parametros
    y retorne el que tenga el valor mayor
    Restricciones: max y max-key"
-  [& args])
+  [& args]
+  
+  )
 
 (defn split-two
   "Escribir una funcion que parta una secuencia en dos partes
    Restricciones: split-at"
   [length s]
+  
   )
 
 (defn inter-two
@@ -52,6 +56,7 @@
   "Escribir una funcion que reciba un string y devuelva un nuevo string conteniendo
    solamente las mayusculas."
   [text]
+  
   )
 
 (defn find-truth
