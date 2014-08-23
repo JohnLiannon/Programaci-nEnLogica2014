@@ -41,7 +41,7 @@
   "Escribir una funcion que parta una secuencia en dos partes
    Restricciones: split-at"
   [length s]
- 
+  [(into [](take length s)) (into [](drop length s))]
   )
 
 (defn inter-two
