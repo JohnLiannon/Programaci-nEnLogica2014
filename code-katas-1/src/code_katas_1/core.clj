@@ -25,7 +25,7 @@
   "Escribir una funcion que elimine los duplicados consecutivos
    de una secuencia"
   [s]
-  (distinct s)
+  (map first (partition-by identity s))
   )
 
 (defn max-value
