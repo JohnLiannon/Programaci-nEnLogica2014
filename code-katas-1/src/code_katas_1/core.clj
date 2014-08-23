@@ -18,7 +18,7 @@
    Restricciones: range"
   [start end]
   
-  (take-while (partial > end) (iterate inc start))
+  (take (- end start) (iterate inc start))
   )
 
 (defn compress-sequence
