@@ -12,7 +12,7 @@
   "Escribir una funcion que dada una clave y un mapa, devuelva true, solamente si el mapa
    contiene una entrada con esa clave, y su valor es nil"
   [k m]
-   (contains? m k)
+   (if (contains? m k) (=(k m)nil) false)
   
   )
 
