@@ -65,7 +65,8 @@
    solamente si alguno de los parametros son true, pero no todos son true. En otro
    caso debera retornar false"
   [& xs]
-  (if(distinct xs) true false)
+  (if (=(second(sort(distinct  xs)))nil) false true) 
+  
   )
 
 (defn zip-map
